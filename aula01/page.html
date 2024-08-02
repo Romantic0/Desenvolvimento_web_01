@@ -8,26 +8,50 @@
         body {
             font-size: 10hem;
         }
+        label {
+            display: inline-block;
+            width: 100px;
+            padding: 5px;
+        }
     </style>
         
 </head>
 <body>
     <form>
-        <label for="nome">Nome</label>
-        <input type="text" name="nome">
-        <br>
-        <label for="telefone">Telefone</label>
-        <input type="number" name="telefone">
-        <br>
-        <label for="email">E-mail</label>
-        <input type="email" name="email">
-        <br>
-        <label for="pessoa">tipo Pessoa</label>
-        <input list="pessoa_tipo">
-        <datalist id="pessoa_tipo">
-            <option id="pessoa">Fisica</option>
-            <option id="pessoa">juridica</option>
-        </datalist>
+        <p>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome">
+        </p>
+
+        <p>
+            <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone">
+        </p>
+            
+        <p>
+            <label for="email">E-mail</label>
+            <input type="email" name="email">
+        </p>
+
+        <p>
+            <label for="pessoa">Tipo Pessoa</label>
+            <select>
+                <option id="pessoa">Fisica</option>
+                <option id="pessoa">juridica</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco">
+        </p>
+
+        <p>
+            <label for="UF">Melhor estado do Brasil?</label>
+            <select>
+                <option id="UF">SC</option>
+            </select>
+        </p>
         
     </form>
 </body>
